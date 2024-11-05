@@ -21,5 +21,11 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.fun1),
-    path('second/<a>/<int:b>',views.second)
+    path('second/<int:a>/<int:b>',views.second),
+    path('bonus/<int:s>/<int:y>',views.bonus),
+    path('divisible/<int:n>',views.divisible),
+    path('ebill/<int:u>',views.ebill),
+    path('city/<c>',views.city),
+    path('day/<int:d>',views.day),
+    path('bike/<int:p>',views.bike),
 ]
