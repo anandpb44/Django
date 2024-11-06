@@ -28,4 +28,6 @@ urlpatterns = [
     path('city/<c>',views.city),
     path('day/<int:d>',views.day),
     path('bike/<int:p>',views.bike),
+    path('con',views.html),
+    path('table',views.age),
 ]

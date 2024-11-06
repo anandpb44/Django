@@ -59,3 +59,24 @@ def bike(req,p):
     elif p<=50000:
         t=p*5/100
         return HttpResponse(t)
+def html(req):
+    # a='Django'
+    # b=['python','php','java']
+    # c=4537
+    # d=('python','php','java')
+    # e={'name':'anu','age':20,'gender':'female'}
+    # return render(req,'index.html',{'a':a,'b':b,'c':c,'d':d,'e':e})
+    l=[1,2,3,4,5,6]
+    u=[{'name':'anu','age':20},{'name':'akhil','age':22},{'name':'deepu','age':20}]
+    return render(req,'index.html',{'l':l,'u':u})
+def age(req):
+    t=[{'name':'anand','age':20},{'name':'akhil','age':32},{'name':'Deepu','age':33},{'name':'Hakkeem','age':25},{'name':'Dijin','age':30},{'name':'sanal','age':31},{'name':'Nabeel','age':29}]
+    l1=[]
+    l2=[]
+    for i in t:
+        if i['age']>30:
+            l1.append(i)
+        else:
+            l2.append(i)
+    return render(req,'age.html',{'t':t,'l1':l1,'l2':l2})
+   

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CONNECTION</title>
+</head>
+<body>
+    <!-- <h1>CONNECTING HTML </h1>
+    <h2>{{a}}</h2>
+    {{b}}
+    <h4>{{c}}</h4>
+    {{d}}
+    <h2>{{e}}</h2> -->
+
+
+    <!-- {% for i in l %}
+    <h1>{{i}}</h1>
+    {% endfor %} -->
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        {% for i in u %}
+        <tr>
+            <td>{{ i.name }}</td>
+            <td>{{i.age}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
