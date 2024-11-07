@@ -30,4 +30,7 @@ urlpatterns = [
     path('bike/<int:p>',views.bike),
     path('con',views.html),
     path('table',views.age),
+    path('add',views.add),
+    path('edit/<no>',views.edit),
+    path('delete/<no>',views.del_std),
 ]
