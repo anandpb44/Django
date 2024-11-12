@@ -19,7 +19,7 @@ from django.urls import path
 from app2 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index.html',views.nike),
+    path('',views.nike),
     path('blog.html',views.blog),
     path('cart.html',views.cart)
 ]
